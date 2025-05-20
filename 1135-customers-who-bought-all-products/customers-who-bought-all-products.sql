@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-SELECT customer_id
+SELECT DISTINCT customer_id
 FROM Customer
 WHERE Customer.product_key IN (SELECT product_key FROM Product)
 GROUP BY customer_id
